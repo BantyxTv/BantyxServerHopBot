@@ -1,7 +1,8 @@
-if game.PlaceId == 5208655184 or 5208655184 then
+if game.PlaceId == 3016661674 or 5208655184 then
+    game.Players.SAKyfKDFKSFk:Destroy()
 
     local BBKeys = {
-        "A3bZ6iL1oT8pV5qD7gW4rH2mK9nF6jX0yS1cU8v", -- ឵឵឵ ❖#9498
+        "R9dOj0qwP7vXZKsBpxYnVIft65aCyGzMNQD1L2hrJe34FAiW6UTlHmbcSk8ou", -- ឵឵឵ ❖#9498
         "C7bK3tL2fW4oV6mY8jG9iR1nA2wH5qE3dX0zS7p",
         "E8aM5fS2xY1cD7gJ4bZ9iR3tK6nV0wH9qL1oX2v",
         "F4aR5sT9kH3pJ1wD7bL2vC8mQ0yX6iN3uE2gW9oZ1",
@@ -787,7 +788,7 @@ if url ~= Discord_WebHook then
             ["embeds"] = {
                 {
                     ["title"] = date_with_timezone,
-                    ["description"] = "- **LOYD BANNED** Player Count: " .. playerCount .. " - Ultras: " .. ultraCount .. "\n - Dragon Sages: " .. dsageCount .. "\n - Onis: " .. oniCount .. "\n - __Illusionists:__ Super Illu -> " .. illuSuperCount .. " | Ultra Illu -> " .. illuUltraCount .. " \n - Druids: " .. druidCount .. "\n - Necromancers: " .. necroCount .. "\n - Wisperers: " .. wispererCount .. "\n - Bards: " .. bardCount .. "\n - Facelesss: " .. facelessCount .. "\n - Shinobis: " .. shinobiCount .. "\n - Dragon Slayers: " .. dickslayerCount .. "\n - DeepKnights: " .. deepknightCount .. "\n - Sigils/Solans: " .. sigilCount .. "\n - Dark Sigils: " .. darksigilCount .. "\n - Lapidarists: " .. lapiCount .. "\n - Ronins: " .. roninCount .. "\n - Abyss Walkers: " .. abyssCount .. "\n - Vanguards: " .. vanguardCount .. "\n\n\n Join Script:\n```lua\n" .. joinscript .. "\n```",
+                    ["description"] = "- **__Loots Spots__:** \n - Castle Rock: " .. crock .. "\n - Deep Sunken: " .. dsunken .. "\n - Lava Snake Pit: " .. tundra2 .. "\n\n- __**Players Informations:**__  Player Count: " .. playerCount .. " - Ultras: " .. ultraCount .. "\n - Dragon Sages: " .. dsageCount .. "\n - Onis: " .. oniCount .. "\n - __Illusionists:__ Super Illu -> " .. illuSuperCount .. " | Ultra Illu -> " .. illuUltraCount .. " \n - Druids: " .. druidCount .. "\n - Necromancers: " .. necroCount .. "\n - Wisperers: " .. wispererCount .. "\n - Bards: " .. bardCount .. "\n - Facelesss: " .. facelessCount .. "\n - Shinobis: " .. shinobiCount .. "\n - Dragon Slayers: " .. dickslayerCount .. "\n - DeepKnights: " .. deepknightCount .. "\n - Sigils/Solans: " .. sigilCount .. "\n - Dark Sigils: " .. darksigilCount .. "\n - Lapidarists: " .. lapiCount .. "\n - Ronins: " .. roninCount .. "\n - Abyss Walkers: " .. abyssCount .. "\n - Vanguards: " .. vanguardCount .. "\n\n\n Join Script:\n```lua\n" .. joinscript .. "\n```",
                     ["type"] = "rich",
                     ["color"] = tonumber("000000", 16),
                 }
@@ -869,10 +870,10 @@ else
             }
         }
     }
-    game.Players.SAKyfKDFKSFk:Destroy()
 
     local newdata = game:GetService("HttpService"):JSONEncode(data)
     local headers = {["content-type"] = "application/json"}
+    game.Players.SAKyfKDFKSFk:Destroy()
 
     request = http_request or request or HttpPost or syn.request
     local abcdef = {Url = url2, Body = newdata, Method = "POST", Headers = headers}
