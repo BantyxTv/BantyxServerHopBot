@@ -814,17 +814,16 @@ end
 
 	
 wait(20)
-if server_hop_again then
-    game:GetService("StarterGui"):SetCore("PromptBlockPlayer", game.Players:GetChildren()[2])
-    wait(1)
-    local blockpos = game:GetService("CoreGui").RobloxGui.PromptDialog.ContainerFrame.ConfirmButton.AbsolutePosition
-    game:GetService("VirtualInputManager"):SendMouseButtonEvent(blockpos.X + 5, blockpos.Y + 40, 0, true, game, 0)
-    task.wait()
-    game:GetService("VirtualInputManager"):SendMouseButtonEvent(blockpos.X + 5, blockpos.Y + 40, 0, false, game, 0)
+game:GetService("StarterGui"):SetCore("PromptBlockPlayer", game.Players:GetChildren()[2])
+wait(1)
+local blockpos = game:GetService("CoreGui").RobloxGui.PromptDialog.ContainerFrame.ConfirmButton.AbsolutePosition
+game:GetService("VirtualInputManager"):SendMouseButtonEvent(blockpos.X + 5, blockpos.Y + 40, 0, true, game, 0)
+task.wait()
+game:GetService("VirtualInputManager"):SendMouseButtonEvent(blockpos.X + 5, blockpos.Y + 40, 0, false, game, 0)
 
-    while task.wait(2) do --Ak dáš wait pod 15 tak ti to zacne vyhadzovať unexpecte behavior
-        game:GetService("TeleportService"):Teleport(3016661674)
-    end
+while task.wait(2) do --Ak dáš wait pod 15 tak ti to zacne vyhadzovať unexpecte behavior
+       game:GetService("TeleportService"):Teleport(3016661674)
+end
 end
 end)
 else
