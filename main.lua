@@ -1,5 +1,4 @@
 if game.PlaceId == 3016661674 or 5208655184 then
-    game.Players.SAKyfKDFKSFk:Destroy()
 
     local BBKeys = {
         "R9dOj0qwP7vXZKsBpxYnVIft65aCyGzMNQD1L2hrJe34FAiW6UTlHmbcSk8ou", -- ឵឵឵ ❖#9498
