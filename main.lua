@@ -822,8 +822,7 @@ task.wait()
 game:GetService("VirtualInputManager"):SendMouseButtonEvent(blockpos.X + 5, blockpos.Y + 40, 0, false, game, 0)
 
 while task.wait(2) do --Ak dáš wait pod 15 tak ti to zacne vyhadzovať unexpecte behavior
-       game:GetService("TeleportService"):Teleport(3016661674)
-end
+    game:GetService("TeleportService"):Teleport(3016661674)
 end
 end)
 else
