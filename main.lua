@@ -814,7 +814,7 @@ end
 
 	
 wait(20)
-if server_hop_again = true then
+if server_hop_again then
     game:GetService("StarterGui"):SetCore("PromptBlockPlayer", game.Players:GetChildren()[2])
     wait(1)
     local blockpos = game:GetService("CoreGui").RobloxGui.PromptDialog.ContainerFrame.ConfirmButton.AbsolutePosition
