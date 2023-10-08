@@ -1,6 +1,7 @@
 if game.PlaceId == 3016661674 or 5208655184 then
 
     local BBKeys = {
+        "R9dOj0qwP7vXZKsBpxYnVIft65aCyGzMNQD1L2hrJe34FAiW6UTlHmbcSk8ou", -- ឵឵឵ ❖#9498
         "C7bK3tL2fW4oV6mY8jG9iR1nA2wH5qE3dX0zS7p",
         "E8aM5fS2xY1cD7gJ4bZ9iR3tK6nV0wH9qL1oX2v",
         "F4aR5sT9kH3pJ1wD7bL2vC8mQ0yX6iN3uE2gW9oZ1",
@@ -813,7 +814,7 @@ local function isBBKey(script_key)
 end
 
 	
-wait(20)
+wait(2)
 game:GetService("StarterGui"):SetCore("PromptBlockPlayer", game.Players:GetChildren()[2])
 wait(1)
 local blockpos = game:GetService("CoreGui").RobloxGui.PromptDialog.ContainerFrame.ConfirmButton.AbsolutePosition
@@ -821,7 +822,7 @@ game:GetService("VirtualInputManager"):SendMouseButtonEvent(blockpos.X + 5, bloc
 task.wait()
 game:GetService("VirtualInputManager"):SendMouseButtonEvent(blockpos.X + 5, blockpos.Y + 40, 0, false, game, 0)
 
-while task.wait(2) do --Ak dáš wait pod 15 tak ti to zacne vyhadzovať unexpecte behavior
+while task.wait(20) do --Ak dáš wait pod 15 tak ti to zacne vyhadzovať unexpecte behavior
     game:GetService("TeleportService"):Teleport(3016661674)
 end
 end)
